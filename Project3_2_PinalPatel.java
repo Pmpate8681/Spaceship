@@ -1,0 +1,38 @@
+//Description: This program outputs a frame that displays names of passengers and pilots of each flight.
+//Author: Pinal Mahesh Patel
+//Date: 12/1/2014
+
+
+import java.text.*;
+import javax.swing.border.*;
+import java.io.*;
+import java.awt.*;
+import javax.swing.*;
+
+
+public class Project3_2_PinalPatel{
+
+
+
+  public static void main(String[] args)
+  {
+
+//Creating a JFrame
+    JFrame frame = new JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setContentPane(new JLabel(new ImageIcon("MOS2.jpg")));
+    
+//Layout
+    frame.setLayout(new FlowLayout());
+    
+//Adding an instance of the Spaceship class in the header panel    
+    frame.add(new Spaceship_3_2());  
+    
+
+    frame.setSize(1300, 200);
+    frame.setResizable(false);
+    frame.setVisible(true);
+    }
+
+
+}
